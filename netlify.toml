@@ -1,0 +1,4 @@
+# Färdig HTML-webbplats: inget byggsteg behövs.
+[build]
+  publish = "public"
+  command = ""

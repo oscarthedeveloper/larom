@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="sv"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meningsbyggaren – Lärom</title>
+<meta name="description" content="Bygg 45 meningar med ordbrickor på tre nivåer. Ett lekfullt språkspel för barn med bildledtrådar och resultat.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/larom-symbol.svg">
+<link rel="stylesheet" href="../assets/site.css"><link rel="stylesheet" href="../assets/practice-refinements.css"></head>
+<body class="refined-practice sentence-page">
+<header><a class="brand larom-brand" href="../laryta/index.html" aria-label="Lärom – lärytan"><img src="../assets/larom-logo.svg" alt="Lärom"></a><div class="header-actions"><span class="sketch">3 nivåer · 45 meningar</span><button class="site-link" id="changeLevel" type="button" hidden>Byt nivå</button><a class="site-link" href="../arskurs-1-3/sprak/index.html">Välj spel</a></div></header>
+<main>
+  <section id="levelChooser" class="level-chooser" aria-labelledby="levelsTitle">
+    <div class="hub-intro"><div class="eyebrow">Meningsbyggaren</div><h1 id="levelsTitle" tabindex="-1">Välj din nivå</h1><p class="intro">Börja enkelt eller ta dig an en klurigare mening.</p></div>
+    <div class="level-grid">
+      <button class="level-card" type="button" id="level1"><span class="level-number">1</span><span class="level-title">Nivå 1</span><span class="level-description">Korta meningar.<br>Första ordet är på plats.</span><span class="level-example">Katten <span>…</span></span><span class="level-status" id="levelStatus1">15 meningar</span><span class="level-cta">Välj nivå 1</span></button>
+      <button class="level-card" type="button" id="level2"><span class="level-number">2</span><span class="level-title">Nivå 2</span><span class="level-description">Lite längre meningar.<br>Stor bokstav visar början.</span><span class="level-example">Alla ord är flyttbara</span><span class="level-status" id="levelStatus2">15 meningar</span><span class="level-cta">Välj nivå 2</span></button>
+      <button class="level-card" type="button" id="level3"><span class="level-number">3</span><span class="level-title">Nivå 3</span><span class="level-description">Meningar att klura på.<br>Öva på när, fastän och eftersom.</span><span class="level-example">Alla ord är flyttbara</span><span class="level-status" id="levelStatus3">15 meningar</span><span class="level-cta">Välj nivå 3</span></button>
+    </div><p class="level-note">Du kan byta nivå när du vill. Ditt resultat behålls tills du laddar om sidan.</p>
+  </section>
+  <div class="topline" data-practice hidden>
+    <div><div class="eyebrow" id="levelLabel">Nivå 1 · Lek med meningar</div><h1>Bygg en mening!</h1><p class="intro" id="levelIntro">Tryck på orden i rätt ordning. Början är redan på plats.</p></div>
+    <div class="progress"><span id="count">Mening 1 av 15</span><div class="progress-track" aria-hidden="true"><div id="progressFill"></div></div></div>
+  </div>
+  <div class="practice-toolbar" data-practice hidden><span id="roundLabel" class="scene-tag"></span></div><div class="pair-picker" data-practice hidden><label for="sentenceSelect">Öva på</label><select id="sentenceSelect" aria-label="Välj mening"></select></div>
+  <section class="play sentence-play" data-practice hidden aria-label="Bygg meningen">
+    <div class="left"><div class="scene-top"><span class="scene-tag">Titta & bygg</span></div><div class="scene" id="scene" aria-hidden="true"><span class="actor" id="actor">🐈</span><span class="object" id="object">🛋️</span><span class="spark" id="spark"></span></div><p class="sentence" id="sceneHint">Katten tar en tupplur.</p><p class="scene-hint">Vad berättar meningen?</p></div>
+    <div class="right builder">
+      <h2 id="sentenceHeading">Din mening</h2>
+      <div class="sentence-board" id="sentenceBoard" role="group" aria-labelledby="sentenceHeading"><span class="start-tile" id="startWord">Katten</span><span class="selected-tiles" id="selectedWords"></span><span id="emptyPrompt" class="empty-prompt">lägg orden här</span><span class="sentence-period" aria-hidden="true">.</span></div>
+      <p class="tile-help" id="tileHelp">Tryck på ett valt ord för att lägga tillbaka det.</p>
+      <div class="bank-heading"><h3 id="bankHeading">Ord att välja</h3><button class="reset-sentence" id="clearWords" type="button" disabled>Börja om meningen</button></div>
+      <div class="word-bank" id="wordBank" role="group" aria-labelledby="bankHeading"></div>
+      <p class="build-status" id="buildStatus" aria-live="polite" aria-atomic="true"></p>
+      <button type="button" id="hint" class="hint-button">Ge mig en ledtråd</button><div class="feedback idle" id="feedback" role="status" aria-live="polite" aria-atomic="true">Bygg färdigt och tryck på Kolla meningen.</div>
+      <button class="next" id="check" type="button">Kolla meningen</button><button class="next" id="next" type="button" hidden>Nästa mening</button>
+      <p class="score-note">Första kontrollen av en hel mening räknas i resultatet.</p>
+    </div>
+  </section>
+  <details class="practice-example" data-practice hidden><summary>Visa hur: ord som hör ihop</summary><p>I meningen ”Vi ser en röd bil” hör ”en röd bil” ihop. En mening kan ibland byggas på flera sätt. Börja med stor bokstav, använd alla brickor och läs hela meningen.</p></details>
+  <section id="result" class="result-card" hidden aria-labelledby="resultTitle"><span class="result-icon" aria-hidden="true">🌟</span><p class="eyebrow">Ditt resultat</p><h2 id="resultTitle" tabindex="-1">Alla meningar klara!</h2><p class="result-score" id="resultScore"></p><p class="result-label">rätt på första försöket</p><p class="result-message" id="resultMessage"></p><p id="supportSummary" class="support-summary"></p><div class="result-actions"><button id="review" class="site-link" type="button" hidden>Öva vidare</button><button id="transfer" class="next" type="button">Prova i ett nytt exempel</button><button id="backToPrimary" class="site-link" type="button" hidden>Till första resultatet</button><button id="restart" class="next" type="button">Spela nivån igen</button><button class="site-link" id="resultLevels" type="button">Välj nivå</button><a class="site-link" href="../arskurs-1-3/sprak/index.html">Välj ett annat spel</a></div></section>
+  <div class="bottom"><details><summary>Till dig som hjälper till</summary><p>Här finns tre nivåer med 15 meningar vardera. Nivå 1 har korta meningar med given början. Nivå 2 har längre meningar där alla ord flyttas; startordet har stor bokstav. Nivå 3 tränar bland annat bisatser, omvänd ordföljd och uttryck som ”befann sig”. Flera granskade alternativa ordföljder finns i facit. Det är en avgränsad övning med ordbrickor, inte en fullständig grammatikkontroll. Diskutera gärna andra möjliga formuleringar med barnet. Använd alla ordbrickor och läs gärna meningen högt när den är klar.</p><p>Ordbrickorna fungerar med tryck, klick eller tangentbordets Tab och Enter. Ett valt ord kan läggas tillbaka. Först när en hel mening kontrolleras räknas det som ett försök. Efter två felaktiga kontroller visas en ledtråd; efter tre visas meningen att bygga. Att flytta ord, börja om meningen eller byta uppgift nollställer inte poängen. Varje nivå har en egen poängräkning. När nivåns 15 meningar är klara visas resultatet. ”Spela nivån igen” nollställer bara den nivån. Du kan byta nivå utan att förlora dina tidigare försök. Resultatet sparas inte vid omladdning.</p><p>Efter omgången kan barnet repetera uppgifter med misstag eller visad innehållshjälp och prova kunskapen i ett nytt exempel. Dessa omgångar har egna resultat. Första omgångens resultat bevaras under besöket. Ledtrådar och facitstöd redovisas separat; ordinarie stöd sänker inte poängen. Ingen elevdata sparas vid omladdning.</p></details><button class="motion" id="motion" type="button" aria-pressed="false">Pausa rörelser</button></div>
+</main><script src="../assets/results.js"></script><script src="../assets/sentences-data.js"></script><script src="../assets/sentences.js"></script></body></html>

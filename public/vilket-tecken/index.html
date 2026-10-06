@@ -1,0 +1,20 @@
+<!doctype html><html lang="sv"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vilket tecken?! – Lärom</title>
+<meta name="description" content="Läs meningen och ledtråden. Välj det tecken som passar bäst. 15 lekfulla övningar med resultat.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/larom-symbol.svg">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body class="choice-page punctuation-page">
+<header><a class="brand larom-brand" href="../laryta/index.html" aria-label="Lärom – lärytan"><img src="../assets/larom-logo.svg" alt="Lärom"></a><div class="header-actions"><span class="sketch">15 övningar</span><a class="site-link" href="../arskurs-1-3/sprak/index.html">Välj spel</a></div></header>
+<main>
+  <div class="topline" data-practice><div><div class="eyebrow">Lek med skiljetecken</div><h1>Vilket tecken passar?</h1><p class="intro">Läs meningen och ledtråden. Välj det tecken som passar bäst.</p></div><div class="progress"><span id="count">Övning 1 av 15</span><div class="progress-track" aria-hidden="true"><div id="progressFill"></div></div></div></div>
+  <div class="pair-picker" data-practice><label for="exerciseSelect">Öva på</label><select id="exerciseSelect" aria-label="Välj övning"></select></div>
+  <section class="play" data-practice aria-label="Vilket tecken?">
+    <div class="left"><div class="scene-top"><span class="scene-tag" id="sceneTag">Tänk på hur det sägs</span></div><div class="scene" id="scene" aria-hidden="true"><span class="actor" id="actor"></span><span class="object" id="object"></span><span class="spark" id="spark"></span></div><p class="sentence" id="prompt">Var är min sko</p><p class="scene-hint" id="context"></p></div>
+    <div class="right"><div class="step-label">Ett litet tecken gör skillnad</div><h2>Vilket tecken?</h2><div class="choices" id="choices"></div><div class="feedback idle" id="feedback" role="status" aria-live="polite" aria-atomic="true">Du får alltid prova igen.</div><button class="next" id="next" type="button" disabled>Nästa övning</button><p class="score-note">Första försöket räknas i resultatet.</p></div>
+  </section>
+  <section id="result" class="result-card" hidden aria-labelledby="resultTitle"><span class="result-icon" aria-hidden="true">🌟</span><p class="eyebrow">Ditt resultat</p><h2 id="resultTitle" tabindex="-1">Alla meningar klara!</h2><p class="result-score" id="resultScore"></p><p class="result-label">rätt på första försöket</p><p class="result-message" id="resultMessage"></p><div class="result-actions"><button id="restart" class="next" type="button">Spela igen</button><a class="site-link" href="../arskurs-1-3/sprak/index.html">Välj ett annat spel</a></div></section>
+  <div class="bottom"><details><summary>Till dig som hjälper till</summary><p>En punkt avslutar ofta ett påstående. Ett frågetecken avslutar en fråga. Ett utropstecken kan visa stark känsla eller en uppmaning. I verkliga texter kan flera tecken passa beroende på avsikten. Här väljer barnet det tecken som bäst passar ledtråden om situation och tonfall. Läs gärna samma mening med olika röster och prata om skillnaden.</p><p>Spelet har 15 övningar. Efter alla övningar visas rätt på första försöket. Upprepade svar ger inte extra poäng. Du kan byta övning utan att nollställa tidigare försök. ”Spela igen” startar en ny omgång. Resultatet sparas inte vid omladdning.</p></details><button class="motion" id="motion" type="button" aria-pressed="false">Pausa rörelser</button></div>
+</main><script src="../assets/results.js"></script><script src="../assets/vilket-tecken.js"></script><script src="../assets/choice-games.js"></script></body></html>

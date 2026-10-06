@@ -1,0 +1,63 @@
+.refined-practice [hidden]{display:none!important}
+.refined-practice .practice-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 16px}
+.refined-practice .round-menu{position:relative;max-width:100%;font-size:17px}
+.refined-practice summary{cursor:pointer;font-weight:600}
+.refined-practice .round-menu[open]{padding:16px;border:1px solid var(--line);border-radius:16px;background:white;flex-basis:100%}
+.refined-practice .round-menu p{margin:10px 0;font-size:17px}
+.refined-practice .round-menu button{margin:4px 8px 4px 0}
+.refined-practice .site-link{font-family:inherit;cursor:pointer;white-space:normal;text-align:center;min-height:44px}
+.refined-practice .hint-button{align-self:flex-start;font:500 17px 'IBM Plex Sans',sans-serif;color:var(--blue);background:#f0f3ff;border:1px solid #cbd2ea;border-radius:12px;padding:10px 14px;min-height:44px;cursor:pointer}
+.refined-practice .hint-button:hover{background:#e3e9ff}
+.refined-practice :is(button,summary):focus-visible{outline:3px solid #c04d19;outline-offset:4px}
+.refined-practice .practice-example{padding:16px 20px;border:1px solid var(--line);border-radius:20px;background:white;margin:20px 0;font-size:18px}
+.refined-practice .practice-example>p{margin-top:14px;max-width:760px}
+.refined-practice .practice-example .learning{border:0;box-shadow:none;margin-top:14px;padding:10px 0}
+.refined-practice .support-summary{font-size:17px;line-height:1.6;color:#52607d;max-width:660px;margin:10px auto 24px}
+.refined-practice .result-actions .next{max-width:300px}
+.refined-practice .task-context{max-width:620px;margin:10px auto;font-size:21px;line-height:1.5}
+.vowel-page .feedback{min-height:110px;font-size:19px}
+.vowel-page .feedback strong{font-size:22px}
+.vowel-page .choice:disabled{opacity:1;cursor:default}
+.refined-practice.exchange-page .math-feedback{white-space:pre-line;text-align:left}
+.refined-practice.exchange-page .method-activity{max-width:960px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);column-gap:32px;padding:22px}
+.refined-practice.exchange-page .target-card{grid-column:1/-1;margin-bottom:10px}
+.refined-practice.exchange-page .calculation-table{grid-column:1;grid-row:2/4;align-self:start}
+.refined-practice.exchange-page #columnExplain{grid-column:2;grid-row:2;text-align:left;margin:8px 0}
+.refined-practice.exchange-page .step-panel{grid-column:2;grid-row:3;margin:10px 0 0;width:100%;align-self:start}
+@media(max-width:760px){.refined-practice.exchange-page .method-activity{display:block;padding:18px 12px}.refined-practice.exchange-page .step-panel{margin:12px auto}.refined-practice.exchange-page #columnExplain{text-align:center}.refined-practice .practice-toolbar{gap:8px}.refined-practice .pair-picker{flex-wrap:wrap}.refined-practice .result-actions{flex-direction:column;align-items:stretch}.refined-practice .result-actions .next{max-width:none}.vowel-page .right{padding:24px}.vowel-page .feedback{min-height:90px}}
+/* Round C: scoped to the three refined games. */
+.refined-practice.geography-page #countryPrompt{font-size:clamp(22px,2.3vw,32px);line-height:1.4;overflow-wrap:break-word}
+.refined-practice.geography-page #mapLink{font-size:17px;margin:8px 0}
+.refined-practice.empire-page .empire-figure img{max-height:260px;object-fit:contain}
+.refined-practice.empire-page #compareFigure img{max-height:175px}
+.refined-practice.empire-page .empire-figure figcaption{font-size:15px;line-height:1.4}
+.refined-practice.empire-page .history-timeline{font-size:16px;max-height:220px;overflow:auto}
+.refined-practice.clock-page #clockQuestion{font-size:clamp(24px,2.6vw,34px);line-height:1.3}
+.refined-practice.clock-page #setClock{width:100%;font-size:20px}
+.refined-practice.clock-page #setTime{display:block;width:100%;min-height:48px;accent-color:var(--blue);margin:12px 0}
+.refined-practice.clock-page #setTime:focus-visible{outline:3px solid #c04d19;outline-offset:4px}
+.refined-practice.clock-page #setNote{font-size:17px;line-height:1.5}
+/* Round D: exploration and editing keep the existing page layouts. */
+.refined-practice.build-page .prediction-label{display:block;font-size:18px;font-weight:600;margin:12px 0 8px}
+.refined-practice.build-page .prediction-label span{font-weight:400}
+.refined-practice.build-page #prediction{display:block;width:100%;min-height:46px;margin:0 0 14px;border:1px solid #becbe5;border-radius:12px;padding:10px;font:18px 'IBM Plex Sans',sans-serif;color:var(--ink);background:white}
+.refined-practice.build-page .build-comparison{font-size:17px;margin:18px 0 0;border-top:1px solid #b9d9ca;padding-top:14px}
+.refined-practice.build-page .build-comparison p{font-size:16px;line-height:1.5}
+.refined-practice.build-page .comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.refined-practice.build-page .comparison-grid article{background:#ffffffb3;border-radius:14px;padding:12px;overflow-wrap:break-word}
+.refined-practice.build-page .comparison-grid h3{font-size:19px;margin:0 0 8px}
+.refined-practice.build-page .practical-lab{padding:24px;background:#f3f8ff;border:1px solid var(--line);border-radius:24px;margin:20px 0}
+.refined-practice.build-page .practical-lab h2{font-size:32px;margin:6px 0 14px}
+.refined-practice.build-page .practical-lab>p{font-size:19px;line-height:1.5;max-width:850px}
+.refined-practice.build-page .practical-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0}
+.refined-practice.build-page .practical-grid article{background:white;border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0}
+.refined-practice.build-page .practical-icon{font-size:40px}
+.refined-practice.build-page .practical-grid h3{font-size:24px;line-height:1.3;margin:10px 0}
+.refined-practice.build-page .practical-grid p,.refined-practice.build-page .practical-grid li{font-size:18px;line-height:1.5}
+.refined-practice.build-page .practical-grid ol{padding-left:23px}.refined-practice.build-page .practical-grid li{padding:0 0 10px}
+.refined-practice.build-page .investigation-question{background:#e3f5ed;padding:12px;border-radius:12px}
+.refined-practice.build-page .practical-grid [aria-pressed=true]{background:#e3f5ed;border-color:#287d51}
+.refined-practice.writing-page #editorNote{font-size:17px;line-height:1.4;margin:0 0 12px}
+.refined-practice.writing-page #hint{padding:12px;background:#ffffffc0;border-radius:12px}
+@media(max-width:1000px){.refined-practice.build-page .practical-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.refined-practice.build-page .comparison-grid{grid-template-columns:1fr}.refined-practice.build-page .practical-lab{padding:18px 12px}}

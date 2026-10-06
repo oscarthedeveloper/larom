@@ -1,0 +1,29 @@
+<!doctype html><html lang="sv"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Antonymer och synonymer – Lärom</title>
+<meta name="description" content="Träna ord som betyder motsatsen eller ungefär samma sak. Tre nivåer med 15 övningar vardera.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/larom-symbol.svg">
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body class="choice-page opposites-page relations-page">
+<header><a class="brand larom-brand" href="../laryta/index.html" aria-label="Lärom – lärytan"><img src="../assets/larom-logo.svg" alt="Lärom"></a><div class="header-actions"><span class="sketch">3 nivåer · 45 övningar</span><button class="site-link" id="changeLevel" type="button" hidden>Byt nivå</button><a class="site-link" href="../arskurs-1-3/sprak/index.html">Välj spel</a></div></header>
+<main>
+<section id="levelChooser" class="level-chooser" aria-labelledby="levelsTitle">
+ <div class="hub-intro"><div class="eyebrow">Lek med ordens betydelse</div><h1 id="levelsTitle" tabindex="-1">Välj din nivå</h1><p class="intro">Tvärtom eller nästan samma? Upptäck hur orden hör ihop.</p></div>
+ <div class="relation-definitions"><div><h2>Vad är en antonym?</h2><p>Ett ord som betyder <strong>motsatsen</strong> till ett annat.</p><p class="definition-example">varm · kall</p></div><div><h2>Vad är en synonym?</h2><p>Ett ord som betyder <strong>ungefär samma sak</strong> som ett annat.</p><p class="definition-example">glad · lycklig</p></div></div>
+ <div class="level-grid">
+ <button class="level-card" id="level1" type="button"><span class="level-number">1</span><span class="level-title">Nivå 1</span><span class="level-description">Hitta motsatsen.<br>Enkla antonymer med bildstöd.</span><span class="level-status" id="levelStatus1">15 övningar</span><span class="level-cta">Välj nivå 1</span></button>
+ <button class="level-card" id="level2" type="button"><span class="level-number">2</span><span class="level-title">Nivå 2</span><span class="level-description">Hitta ett liknande ord.<br>Träna på synonymer.</span><span class="level-status" id="levelStatus2">15 övningar</span><span class="level-cta">Välj nivå 2</span></button>
+ <button class="level-card" id="level3" type="button"><span class="level-number">3</span><span class="level-title">Nivå 3</span><span class="level-description">Blanda och klura.<br>Lite svårare ord av båda slagen.</span><span class="level-status" id="levelStatus3">15 övningar</span><span class="level-cta">Välj nivå 3</span></button>
+ </div><p class="level-note">Du kan byta nivå utan att förlora dina försök. Resultatet sparas tills sidan laddas om.</p>
+</section>
+  <div class="topline" data-practice hidden><div><div class="eyebrow" id="levelLabel">Nivå 1 · Antonymer</div><h1 id="questionTitle">Vad är tvärtom?</h1><p class="intro" id="questionIntro">Träna ord som betyder motsatsen eller ungefär samma sak.</p></div><div class="progress"><span id="count">Övning 1 av 15</span><div class="progress-track" aria-hidden="true"><div id="progressFill"></div></div></div></div>
+  <div class="pair-picker" data-practice hidden><label for="exerciseSelect">Öva på</label><select id="exerciseSelect" aria-label="Välj övning"></select></div>
+  <section class="play" data-practice hidden aria-labelledby="choiceTitle">
+    <div class="left"><div class="scene-top"><span class="scene-tag" id="sceneTag">Hitta motsatsen</span></div><div class="scene" id="scene" aria-hidden="true"><span class="actor" id="actor"></span><span class="object" id="object"></span><span class="spark" id="spark"></span></div><p class="sentence" id="prompt">varm</p><p class="scene-hint" id="context"></p></div>
+    <div class="right"><div class="step-label" id="relationLabel">Antonym = motsats</div><h2 id="choiceTitle">Välj motsatsen</h2><div class="choices" id="choices"></div><div class="feedback idle" id="feedback" role="status" aria-live="polite" aria-atomic="true">Du får alltid prova igen.</div><button class="next" id="next" type="button" disabled>Nästa övning</button><p class="score-note">Första försöket räknas i resultatet.</p></div>
+  </section>
+  <section id="result" class="result-card" hidden aria-labelledby="resultTitle"><span class="result-icon" aria-hidden="true">🌟</span><p class="eyebrow">Ditt resultat</p><h2 id="resultTitle" tabindex="-1">Alla motsatser klara!</h2><p class="result-score" id="resultScore"></p><p class="result-label">rätt på första försöket</p><p class="result-message" id="resultMessage"></p><div class="result-actions"><button id="restart" class="next" type="button">Spela nivån igen</button><button class="site-link" id="resultLevels" type="button">Välj nivå</button><a class="site-link" href="../arskurs-1-3/sprak/index.html">Välj ett annat spel</a></div></section>
+  <div class="bottom"><details><summary>Till dig som hjälper till</summary><p>En antonym betyder motsatsen till ett ord. En synonym betyder ungefär samma sak; ord är sällan utbytbara i alla sammanhang. Läs därför ledtråden tillsammans. Nivå 1 har 15 enkla antonymer, nivå 2 har 15 synonymer och nivå 3 blandar 15 klurigare uppgifter.</p><p>Varje nivå har ett eget resultat som räknar rätt på första försöket. Nivåbyte behåller tidigare försök. ”Spela nivån igen” nollställer bara den valda nivån. Resultaten försvinner vid omladdning.</p></details><button class="motion" id="motion" type="button" aria-pressed="false">Pausa rörelser</button></div>
+</main><script src="../assets/results.js"></script><script src="../assets/tvartom.js"></script><script src="../assets/word-relations.js"></script></body></html>

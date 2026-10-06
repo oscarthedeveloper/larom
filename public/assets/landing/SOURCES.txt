@@ -1,0 +1,8 @@
+Europakarta: bearbetning av samma Natural Earth-underlag som Läroms kartspel, public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+Förenklad linjär projektion och beskuren till Europa; inte ytriktig.
+Frankrike markerat som exempel.
+Flaggor: befintliga flag-icons-filer, MIT. Licens: ../flags/LICENSE.txt.
+Övriga illustrationer är egen SVG/CSS.
+Lenis: 1.3.26 via ett versionslåst UNPKG-skript, endast på startsidan.
+https://github.com/darkroomengineering/lenis

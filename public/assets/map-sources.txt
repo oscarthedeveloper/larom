@@ -1,0 +1,4 @@
+Kartunderlag: Natural Earth, public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson
+Kartorna är förenklade. Europakartorna använder en linjär koordinatomvandling. Världskartan använder en ekvirektangulär projektion och är inte ytriktig. Världsdelsmarkörer är ungefärliga lägen, inte gränser. Hämtat 2026-10-04.
